@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+#main {
+  width: 1200px;
+  height: 700px;
+}
+/*헤더*/
+#header {
+  width: 1200px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+/*헤더 로고*/
+#header .logo {
+  width: 40%;
+  height: 100px;
+}
+#header .logo img {
+  height: 90%;
+}
+/*헤더 메뉴*/
+#header .menu {
+  width: 60%;
+  height: 100px;
+
+  position: relative;
+}
+.menu > ul {
+  display: flex;
+  justify-content: end;
+}
+.menu > ul > li {
+  position: relative;
+  width: 25%;
+  margin-top: 30px;
+}
+.menu > ul > li > a {
+  display: block;
+  height: 50px;
+  line-height: 40px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.menu > ul > li > ul > li {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+.menu > ul > li > ul {
+  background-color: gray;
+  display: none;
+  z-index: 1000;
+}
+.menu > ul > li > ul > li:hover {
+  background-color: #11ff11;
+}
+.menu > ul > li > a:hover {
+  background-color: yellow;
+}
+
+/*슬라이드*/
+#slide {
+  width: 1200px;
+  height: 300px;
+  margin-bottom: 0;
+  z-index: -10;
+}
+.slide-img {
+  height: 300px;
+  position: relative;
+}
+.slide-img img {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  z-index: -10;
+}
+.img1 {
+  z-index: -9;
+}
+
+.img2 {
+  z-index: -8;
+}
+/*콘텐츠*/
+#content {
+  display: flex;
+  margin-top: 0;
+  width: 1200px;
+  height: 200px;
+}
+/*콘텐츠 공지*/
+#content .contl {
+  width: 40%;
+  height: 200px;
+}
+.gongi h2 {
+  font-size: 24px;
+  display: inline;
+
+  cursor: pointer;
+}
+.tab1 {
+  color: gray;
+}
+.tab2 {
+  color: black;
+}
+.tab1-1 {
+  display: none;
+}
+.tab2-2 {
+  display: flex;
+}
+.tab2-2 img {
+  width: 30%;
+  margin: 5px;
+}
+table:first-child {
+  text-align: center;
+}
+td:last-of-type {
+  text-align: left;
+}
+/*콘텐츠 배터*/
+#content .contc {
+  width: 30%;
+  height: 200px;
+  background-color: black;
+  overflow: hidden;
+}
+.cimg {
+  width: 100%;
+  height: 100%;
+
+  background-position: center;
+
+  background-image: url("Contents/배너/observatory.jpg");
+}
+.cimgtxt {
+  text-align: center;
+  padding-top: 150px;
+}
+.cimgtxt > a {
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+#content .conr {
+  width: 30%;
+  height: 200px;
+  background-color: chocolate;
+}
+.rimg {
+  background-image: url("Contents/바로가기/observatory2.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+
+.rimgtxt {
+  text-align: center;
+  padding-top: 100px;
+}
+.rimgtxt > a {
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 70px 10px 70px;
+  border: 1px solid white;
+}
+/*풋터*/
+#footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  height: 100px;
+  background-color: purple;
+}
+#footer .footl {
+  width: 30%;
+  height: 100px;
+}
+.footl img {
+  width: 100%;
+}
+#footer .footr {
+  width: 70%;
+  height: 100px;
+}
+#footer .footr {
+  margin-top: 10px;
+  color: white;
+  font-size: 13px;
+}
+.footrp1 {
+  padding-bottom: 15px;
+  margin-top: 10px;
+}
